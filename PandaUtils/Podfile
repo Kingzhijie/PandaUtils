@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+target 'PandaUtils' do
+use_frameworks!
+
+pod 'Alamofire', '~> 4.5.1' #网络
+pod 'SwiftyJSON'
+pod 'MJRefresh', '~> 3.1.14.1' #刷新控件
+pod 'Kingfisher', '~> 4.4.0' #图片加载
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'SimulateIDFA', '~> 0.0.1' #SimulateIDFA
+
+end
