@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
    swift基础工具 - 通用
                    DESC
 
-  s.homepage     = "http://github.com/Kingzhijie/PandaUtils"
+  s.homepage     = "https://github.com/Kingzhijie/PandaUtils"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/Kingzhijie/PandaUtils.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Kingzhijie/PandaUtils.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "PandaTools/**/*.swift"
+  s.source_files  = 'PandaUtils', 'PandaTools/**/*.swift'
 
   # s.subspec 'CommonTools' do |ss|
   #   ss.source_files = 'PandaTools/**/*.{swift}'
