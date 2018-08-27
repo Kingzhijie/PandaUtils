@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PandaUtils"
-  s.version      = "0.0.4"
+  s.version      = "0.0.9"
   s.summary      = "swift基础工具"
 
   # This description is used to generate tags and improve search results.
@@ -91,12 +91,16 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'PandaUtils', 'PandaTools/**/*.swift'
+  # s.source_files  = 'PandaTools/**/*.swift'
 
-  # s.subspec 'CommonTools' do |ss|
-  #   ss.source_files = 'PandaTools/**/*.{swift}'
-  #   # ss.source_files = 'Extension/Two/*.swift'
-  # end
+  s.subspec 'CommonTools' do |ss|
+    ss.source_files = 'PandaTools/CommonTools/**/*.{swift}'
+  end
+
+  s.subspec 'Extensions' do |ss|
+    ss.source_files = 'PandaTools/Extensions/**/*.{swift}'
+    ss.dependency 'PandaUtils/CommonTools'
+  end
 
 
 
