@@ -81,9 +81,7 @@ extension UIView {
             return self.frame.origin.x
         }
         set(newLeft){
-            var frame = self.frame
-            frame.origin.x = newLeft
-            self.frame = frame
+            self.frame.origin.x = newLeft
         }
     }
     //上边界
@@ -92,9 +90,7 @@ extension UIView {
             return self.frame.origin.y
         }
         set(newTop){
-            var frame = self.frame
-            frame.origin.y = newTop
-            self.frame = frame
+            self.frame.origin.y = newTop
         }
     }
     //右边界
@@ -103,9 +99,7 @@ extension UIView {
             return self.frame.origin.x + self.frame.size.width
         }
         set(newRight){
-            var frame = self.frame
-            frame.origin.x = newRight - frame.size.width
-            self.frame = frame
+            self.frame.origin.x = newRight - frame.size.width
         }
     }
     //下边界
@@ -114,9 +108,7 @@ extension UIView {
             return self.frame.origin.y + self.frame.size.height
         }
         set(newBottom){
-            var frame = self.frame
-            frame.origin.y = newBottom - frame.size.height
-            self.frame = frame
+            self.frame.origin.y = newBottom - frame.size.height
         }
     }
     //宽度
@@ -125,9 +117,7 @@ extension UIView {
             return self.frame.size.width
         }
         set(newWidth){
-            var frame = self.frame
-            frame.size.width = newWidth
-            self.frame = frame
+            self.frame.size.width = newWidth
         }
     }
     //高度
@@ -136,9 +126,7 @@ extension UIView {
             return self.frame.size.height
         }
         set(newHeight){
-            var frame = self.frame
-            frame.size.height = newHeight
-            self.frame = frame
+            self.frame.size.height = newHeight
         }
     }
     //中心 (x)
@@ -165,9 +153,7 @@ extension UIView {
             return self.frame.origin
         }
         set(newOrigin){
-            var frame = self.frame
-            frame.origin = newOrigin
-            self.frame = frame
+            self.frame.origin = newOrigin
         }
     }
     
@@ -176,9 +162,7 @@ extension UIView {
             return self.frame.size
         }
         set(newSize){
-            var frame = self.frame
-            frame.size = newSize
-            self.frame = frame
+            self.frame.size = newSize
         }
     }
     
